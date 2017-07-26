@@ -1,0 +1,118 @@
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "Yolo Digital",
+  "alternateName": "An alternative name for your WebSite",
+  "url": "https://www.yolodigi.com/"
+}
+
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://www.yolodigi.com/",
+  "contactPoint": [
+    { "@type": "ContactPoint",
+      "telephone": "+1-276-229-0226",
+      "contactType": "customer service",
+       "areaServed": [
+      	"US",
+      	"CA"
+    ]}
+  ]}
+
+  {
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://www.yolodigi.com/",
+  "logo": "https://www.yolodigi.com/imgs/yd-logo.png"
+}
+
+{
+  "@context":"http://schema.org",
+  "@type":"Digital Media Firm",
+  "image": "https://www.yolodigi.com/imgs/yd-logo.png",
+  "@id":"https://www.yolodigi.com/",
+  "name":"Dave's House of Yoga",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"2729 Old Mill Rd",
+    "addressLocality":"Patrick Springs",
+    "addressRegion":"VA",
+    "postalCode":"24133",
+    "addressCountry":"US"
+  },
+  "geo":{
+    "@type":"GeoCoordinates",
+    "latitude":36.670718,
+    "longitude":-80.170818
+  },
+  "telephone":"+12762290226",
+  "potentialAction":{
+    "@type":"ReserveAction",
+    "target":{
+      "@type":"EntryPoint",
+      "urlTemplate":"https://www.yolodigi.com/",
+      "inLanguage":"en-US",
+      "actionPlatform":[
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/IOSPlatform",
+        "http://schema.org/AndroidPlatform"
+      ]
+    },
+    "result":{
+      "@type":"Reservation",
+      "name":"Get a Esitimate"
+    }
+  }
+}
+
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Jeremy Massey",
+  "url": "https://www.yolodigi.com",
+  "sameAs": [
+    "https://www.facebook.com/yolodigi",
+    "https://instagram.com/yolodigi",
+    "https://plus.google.com/u/1/b/108091535253907228513/108091535253907228513",
+    "https://twitter.com/yolodigi"
+  ]
+}
+{
+  "@context":"http://schema.org",
+  "@type":"ElectronicsStore",
+  "image": "https://www.yolodigi.com/imgs/yd-logo.png",
+  "@id":"https://www.yolodigi.com/",
+  "name":"Dave's House of Yoga",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"2729 Old Mill Rd",
+    "addressLocality":"Patrick Springs",
+    "addressRegion":"VA",
+    "postalCode":"24133",
+    "addressCountry":"US"
+  },
+  "geo":{
+    "@type":"GeoCoordinates",
+    "latitude":36.670718,
+    "longitude":-80.170818
+  },
+  "telephone":"+12762290226",
+  "potentialAction":{
+    "@type":"ReserveAction",
+    "target":{
+      "@type":"EntryPoint",
+      "urlTemplate":"https://www.yolodigi.com/",
+      "inLanguage":"en-US",
+      "actionPlatform":[
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/IOSPlatform",
+        "http://schema.org/AndroidPlatform"
+      ]
+    },
+    "result":{
+      "@type":"Reservation",
+      "name":"Get a Esitimate"
+    }
+  }
+}

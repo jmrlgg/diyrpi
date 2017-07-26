@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+"""Manage File for Project."""
 import os
 import sys
 
