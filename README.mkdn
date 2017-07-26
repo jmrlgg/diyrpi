@@ -1,0 +1,13 @@
+## Breifing
+
+Starter Project for YoloDigi's main Website. Which will compose of a few app's **[ DIY , Blog, Social ]**
+
+## Code Example
+
+    Currently no resources posted here
+    I will be updating soon. 
+
+
+
+## Motivation
+
