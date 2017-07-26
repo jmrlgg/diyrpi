@@ -4,6 +4,7 @@ __pycache__
 myvenv
 diyrpi
 Envs
+*.db
 
 db.sqlite3
 /static
