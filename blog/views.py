@@ -13,12 +13,13 @@ from .models import Post
 #         published_date__lte=timezone.now()).order_by('published_date')
 #     return render(request, 'blog/post_list.html', {'posts': posts})
 
+def home(request):
+    return render(request, 'index.html')
 
-def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+
+def blog_post(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
     #posts = map(str, Post.objects.filter(published_date__lte=timezone.now().order_by('published_date'))
 
-    for post in posts:
-        tags = str(post.tags.all)
 
-    return render(request, 'blog/post_list.html', {'posts': posts, 'tags': tags})
+    return render(request, 'blog/post_list.html', {'posts': posts})

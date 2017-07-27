@@ -1,25 +1,61 @@
-<html>
-<head>
-</head>
-<body>
-<section>
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
-<!-- {{ posts }} -->
-{{ posts.tags.names }}
+{% extends "index.html" %}
+
+{% block content %}
+
+<!-- start main post area -->
+<div class="col-md-10 col-centered main-content">
 {% for post in posts %}
-<article>
-    <div>
-      <h1><a href="">{{ post.title }}</a></h1>
-        {{ post.author }} || <small>{{ post.published_date }}</small>
-        <p>{{ post.text }}</p>
-
-          {{ post.tags.names }}
-
+<article id="1168" class="post">
+  <div class="post-head">
+    <h2 class="post-title"><a href="">{{ post.title }}</a></h2>
+    <div class="post-meta">
+      <span class="author">By <a href="/users/jmrl/">{{ post.author }}</a></span> &bull;
+            <span class="date">{{ post.published_date }}</span>
     </div>
+  </div>
+  <div class="featured-media">
+    <!-- <a href="/copia-clipboard-manager-for-mac/"><img src="" alt="Copia Clipboard Manager for Mac"></a> -->
+  </div>
+  <div class="post-content">{% autoescape off %}
+    {{ post.text }}
+  </div>{% endautoescape %}
+  <div class="post-permalink">
+    <a href="" class="btn btn-default">Continue Reading</a>
+  </div>
+
+  <footer class="post-footer clearfix">
+    <div class="pull-left tag-list">
+      <i class="fa fa-folder-open-o"></i>
+      <a href="http://yolodigi.com/tags/here">{{ post.tags.names }}</a>
+    </div>
+    <div class="pull-right share">
+      <ul class="share-icons">
+  <!-- twitter -->
+  <li>
+    <a href="https://twitter.com/share?text=Copia%20Clipboard%20Manager%20for%20Mac&amp;url=https://yolodigi.com/post_detail/pk=1/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"><i class="fa fa-twitter"></i></a>
+  </li>
+  <!-- facebook -->
+  <li>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://yolodigi.com/post_detail/pk=1/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"><i class="fa fa-facebook"></i></a>
+  </li>
+  <!-- google plus -->
+  <li>
+    <a href="https://plus.google.com/share?url=https://yolodigi.com/post_detail/pk=1/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;"><i class="fa fa-google-plus"></i></a>
+  </li>
+  </ul>		</div>
+  </footer>
   </article>
+
 {% endfor %}
-</section>
-</body>
-</html>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout="image-top"
+     data-ad-layout-key="-8g+1w-dq+e9+ft"
+     data-ad-client="ca-pub-4343915730378477"
+     data-ad-slot="5094763216"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+{% endblock %}

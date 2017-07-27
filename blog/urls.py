@@ -18,5 +18,13 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
+    url(r'^$', views.home, name='home'), #home
+    url(r'^news/$', views.blog_post, name='news'), #blog post
 ]
+    # url(r'^members/$', users, name='users'),  # View of current members under Blogger(model)
+    # url(r'^news/$', entry, name='news'),  # Post entry view [ entire Entry(model) ]
+    # url(r'^post/new/$', post_new, name='post_new'),  # create new post if logged_in
+    # url(r'^base/$', base),
+    # url(r'^contact/$', contact),  # simple form with contact abilities ref. email
+    # url(r'^contactpopup/$', contact_popup),  # (in development) test run for [contact us] to be inside a " bootstrap modal "
+    # url(r'^$', home),  # home
