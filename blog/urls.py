@@ -20,6 +20,8 @@ from . import views
 urlpatterns = [
     url(r'^$', views.home, name='home'), #home
     url(r'^news/$', views.blog_post, name='news'), #blog post
+    url(r'^calendar/$', views.diy_cal, name='diy_cal'), #blog post
+    url(r'^irc/$', views.yolo_irc, name='yolo_irc'), #blog post
 ]
     # url(r'^members/$', users, name='users'),  # View of current members under Blogger(model)
     # url(r'^news/$', entry, name='news'),  # Post entry view [ entire Entry(model) ]
